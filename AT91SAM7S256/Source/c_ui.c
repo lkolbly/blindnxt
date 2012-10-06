@@ -1034,6 +1034,7 @@ void      cUiMenuPrev(void)
 
 void      cUiMenuEnter(void)
 {
+  dSoundFreq(200, 500, 100);
   // Call function with parameter (if pressent)
   if (!(VarsUi.pMenuLevel->SpecialFlags & MENU_INIT_CALLS))
   {

@@ -1,711 +1,211 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <project>
-  <fileVersion>1</fileVersion>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2926808574</fileChecksum>
   <configuration>
     <name>Bin Output</name>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file>$PROJ_DIR$\Bin Output\List\LMS_ARM.map</file>
-          <file>$PROJ_DIR$\Bin Output\Exe\LMS_ARM.d79</file>
-          <file>$PROJ_DIR$\Bin Output\Exe\LMS_ARM.a79</file>
-          <file>$PROJ_DIR$\..\Object\LMS_ARM.d79</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Bin Output\Exe\LMS_ARM.d79</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file>$PROJ_DIR$\Bin Output\List\LMS_ARM.map</file>
-          <file>$PROJ_DIR$\Bin Output\Exe\LMS_ARM.a79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file>$PROJ_DIR$\at91SAM7S256_Remap.xcl</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\Cstartup.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\Cstartup_SAM7.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_button.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_cmd.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_comm.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_display.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_input.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_ioctrl.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_led.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_loader.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_lowspeed.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_output.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_sound.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\c_ui.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_bt.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_button.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_display.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_hispeed.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_input.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_ioctrl.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_led.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_loader.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_lowspeed.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_output.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_sound.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_timer.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\d_usb.r79</file>
-          <file>$PROJ_DIR$\Bin Output\Obj\m_sched.r79</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.r79</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_led.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_led.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_led.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_led.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_led.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_ui.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_ui.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$TOOLKIT_DIR$\inc\stdio.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
-          <file>$TOOLKIT_DIR$\inc\ctype.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtls.h</file>
-          <file>$TOOLKIT_DIR$\inc\xmtx.h</file>
-          <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocaleuse.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale_c.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtinfo.h</file>
-          <file>$TOOLKIT_DIR$\inc\time.h</file>
-          <file>$TOOLKIT_DIR$\inc\wchar.h</file>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ui.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ui.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\Display.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\LowBattery.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Startup.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Font.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Status.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Functions.inc</file>
-          <file>$PROJ_DIR$\..\..\Source\Test1.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Test2.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Running.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\BtTest.inc</file>
-          <file>$PROJ_DIR$\..\..\Source\Mainmenu.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu01.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu02.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu03.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu04.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu05.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu06.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu07.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu10.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu11.rms</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_display.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_display.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_display.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_input.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_input.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\d_input.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.iom</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_ioctrl.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_ioctrl.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_ioctrl.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_loader.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_loader.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\d_loader.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_lowspeed.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_lowspeed.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_lowspeed.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_output.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_output.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$TOOLKIT_DIR$\inc\stdio.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_output.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_sound.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_sound.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sound.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Include\Cstartup.s79</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file>$PROJ_DIR$\..\Object\Cstartup.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>AARM</name>
-          <file>$PROJ_DIR$\..\Include\AT91SAM7S256_inc.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Include\Cstartup_SAM7.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\Cstartup_SAM7.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Include\AT91SAM7S256.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_bt.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_bt.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_bt.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_bt.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_usb.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_usb.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_usb.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_usb.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_button.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_button.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_button.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_button.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_display.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_display.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_display.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_display.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_hispeed.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_hispeed.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_hispeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_hispeed.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_input.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_input.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\d_input.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_input.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_button.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_button.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\d_button.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_ioctrl.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_ioctrl.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_ioctrl.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_ioctrl.r</file>
-        </tool>
-      </inputs>
-    </file>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\Source\BtTest.inc</file>
+      <file>$PROJ_DIR$\..\Object\c_output.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_output.h</file>
+      <file>$TOOLKIT_DIR$\inc\xlocale_c.h</file>
+      <file>$TOOLKIT_DIR$\inc\xtinfo.h</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_ioctrl.r79</file>
+      <file>$TOOLKIT_DIR$\inc\xtls.h</file>
+      <file>$TOOLKIT_DIR$\inc\xmtx.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_loader.c</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_button.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_button.r</file>
+      <file>$PROJ_DIR$\..\..\Source\c_comm.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_timer.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_usb.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_ioctrl.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_display.h</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_display.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_lowspeed.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_usb.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\Object\c_button.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_display.c</file>
+      <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
+      <file>$TOOLKIT_DIR$\inc\ctype.h</file>
+      <file>$TOOLKIT_DIR$\inc\xlocale.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_button.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_button.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_timer.r</file>
+      <file>$PROJ_DIR$\..\..\Source\d_led.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_lowspeed.c</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_ui.r79</file>
+      <file>$PROJ_DIR$\at91SAM7S256_Remap.xcl</file>
+      <file>$PROJ_DIR$\Bin Output\Exe\LMS_ARM.d79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_output.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_sound.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_loader.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_led.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_hispeed.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_display.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_button.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_bt.c</file>
+      <file>$PROJ_DIR$\..\Include\Cstartup_SAM7.c</file>
+      <file>$PROJ_DIR$\..\Include\Cstartup.s79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ui.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sound.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_output.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_lowspeed.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_loader.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ioctrl.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_input.c</file>
+      <file>$PROJ_DIR$\Bin Output\List\LMS_ARM.map</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_input.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Display.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\c_lowspeed.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_lowspeed.h</file>
+      <file>$PROJ_DIR$\..\Object\LMS_ARM.d79</file>
+      <file>$PROJ_DIR$\..\Object\d_usb.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_button.h</file>
+      <file>$PROJ_DIR$\..\Include\sam7s256.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_comm.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_lowspeed.r</file>
+      <file>$PROJ_DIR$\..\..\Source\Running.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd_bytecodes.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\d_usb.r</file>
+      <file>$PROJ_DIR$\..\Object\d_button.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_input.c</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_lowspeed.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_output.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_sound.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_comm.iom</file>
+      <file>$PROJ_DIR$\..\Include\AT91SAM7S256_inc.h</file>
+      <file>$PROJ_DIR$\..\..\Source\m_sched.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu02.rms</file>
+      <file>$PROJ_DIR$\..\..\Source\d_loader.h</file>
+      <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_timer.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_usb.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\m_sched.r79</file>
+      <file>$PROJ_DIR$\..\Object\d_display.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Test2.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sound.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_loader.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_lowspeed.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\c_led.iom</file>
+      <file>$PROJ_DIR$\..\Object\c_loader.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Status.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\d_input.h</file>
+      <file>$PROJ_DIR$\..\Object\c_cmd.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_output.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sound.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu11.rms</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ui.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
+      <file>$PROJ_DIR$\..\Object\Cstartup_SAM7.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sound.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd.h</file>
+      <file>$PROJ_DIR$\..\Object\c_lowspeed.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_comm.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\Cstartup.r79</file>
+      <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\string.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_hispeed.r</file>
+      <file>$PROJ_DIR$\..\Object\d_input.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\Cstartup_SAM7.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
+      <file>$PROJ_DIR$\Bin Output\Exe\LMS_ARM.a79</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu10.rms</file>
+      <file>$PROJ_DIR$\..\Object\d_led.r79</file>
+      <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_led.h</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_display.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_hispeed.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_input.r79</file>
+      <file>$PROJ_DIR$\..\Object\c_comm.r79</file>
+      <file>$PROJ_DIR$\..\Object\c_ui.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sound.r</file>
+      <file>$PROJ_DIR$\..\Object\d_timer.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu05.rms</file>
+      <file>$PROJ_DIR$\..\Object\c_sound.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_output.r</file>
+      <file>$PROJ_DIR$\..\Object\d_sound.r79</file>
+      <file>$PROJ_DIR$\..\Object\c_ioctrl.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_bt.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_hispeed.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_ioctrl.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_led.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_loader.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_led.r</file>
+      <file>$PROJ_DIR$\..\Object\m_sched.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Startup.txt</file>
+      <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
+      <file>$TOOLKIT_DIR$\inc\xlocaleuse.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_display.h</file>
+      <file>$PROJ_DIR$\..\Object\c_input.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_ioctrl.r</file>
+      <file>$PROJ_DIR$\..\..\Source\d_loader.r</file>
+      <file>$PROJ_DIR$\..\..\Source\Test1.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ui.h</file>
+      <file>$TOOLKIT_DIR$\inc\yvals.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.r79</file>
+      <file>$PROJ_DIR$\..\Object\c_led.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_led.c</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu06.rms</file>
+      <file>$PROJ_DIR$\..\..\Source\d_output.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ioctrl.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_display.r</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu03.rms</file>
+      <file>$PROJ_DIR$\..\Object\d_hispeed.r79</file>
+      <file>$PROJ_DIR$\..\Object\c_display.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Font.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\Mainmenu.rms</file>
+      <file>$PROJ_DIR$\..\..\Source\d_timer.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_output.h</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\d_button.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_input.r</file>
+      <file>$PROJ_DIR$\..\..\Source\modules.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu04.rms</file>
+      <file>$PROJ_DIR$\..\Object\d_bt.r79</file>
+      <file>$PROJ_DIR$\..\Include\AT91SAM7S256.h</file>
+      <file>$PROJ_DIR$\..\Object\d_loader.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sound.h</file>
+      <file>$PROJ_DIR$\..\Object\Cstartup.r79</file>
+      <file>$PROJ_DIR$\Bin Output\Obj\c_cmd.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_ioctrl.h</file>
+      <file>$PROJ_DIR$\..\..\Source\Functions.inc</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu07.rms</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu01.rms</file>
+      <file>$PROJ_DIR$\..\..\Source\c_input.h</file>
+      <file>$PROJ_DIR$\..\Object\d_ioctrl.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
+      <file>$PROJ_DIR$\..\Object\d_lowspeed.r79</file>
+      <file>$PROJ_DIR$\..\Object\d_output.r79</file>
+      <file>$TOOLKIT_DIR$\inc\time.h</file>
+      <file>$TOOLKIT_DIR$\inc\wchar.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_led.h</file>
+      <file>$PROJ_DIR$\..\..\Source\LowBattery.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\d_bt.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_bt.r</file>
+      <file>$TOOLKIT_DIR$\inc\stdio.h</file>
+    </outputs>
     <file>
       <name>$PROJ_DIR$\..\..\Source\d_loader.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_loader.r79</file>
+          <file> 165</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_loader.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_loader.r</file>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$TOOLKIT_DIR$\inc\ctype.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtls.h</file>
-          <file>$TOOLKIT_DIR$\inc\xmtx.h</file>
-          <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocaleuse.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale_c.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtinfo.h</file>
-          <file>$TOOLKIT_DIR$\inc\time.h</file>
-          <file>$TOOLKIT_DIR$\inc\wchar.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_lowspeed.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_lowspeed.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_lowspeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_lowspeed.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_output.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_output.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_output.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_output.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_sound.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_sound.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sound.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sound.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_timer.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_timer.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_timer.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_timer.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_led.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_led.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_led.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_led.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\m_sched.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\m_sched.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.c</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_led.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ui.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_cmd.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_cmd.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_led.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ui.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd_bytecodes.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_timer.h</file>
-          <file>$TOOLKIT_DIR$\inc\stdio.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
+          <file> 77 160 95 111 23 76 140 103 143 127 128 19 20 102 24 25 6 7 135 136 3 4 179 180</file>
         </tool>
       </inputs>
     </file>
@@ -714,38 +214,427 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_comm.r79</file>
+          <file> 116</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_usb.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_hispeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_bt.h</file>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$TOOLKIT_DIR$\inc\ctype.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtls.h</file>
-          <file>$TOOLKIT_DIR$\inc\xmtx.h</file>
-          <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocaleuse.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale_c.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtinfo.h</file>
-          <file>$TOOLKIT_DIR$\inc\time.h</file>
-          <file>$TOOLKIT_DIR$\inc\wchar.h</file>
+          <file> 77 160 71 183 161 60 18 126 184 103 143 127 128 19 20 102 24 25 6 7 135 136 3 4 179 180</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_timer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 119</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 95 111 23 156 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_usb.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 95 111 23 18 65</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_ioctrl.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 175</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 103 143 127 128 19 20 102 77 95 111 23 170 139</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_display.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 153</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 160 176 15 137</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_button.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 160 26 107 58</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 51 33 108 56</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_led.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 110</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 95 111 23 181 132</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_lowspeed.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 177</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 95 111 23 55 61</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Bin Output\Exe\LMS_ARM.d79</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 51 108</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 32 101 106 9 169 100 16 52 5 37 36 17 34 35 31 125 158 113 114 115 129 130 131 68 69 70 78 79 80 144</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_hispeed.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 152</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 95 111 23 126 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_display.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 81</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 95 111 23 137 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_button.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 95 111 23 58 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_bt.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 163</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 95 111 23 184 185</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Include\Cstartup_SAM7.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 96</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 164</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Include\Cstartup.s79</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 168</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 72</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_ui.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 186 143 127 128 19 20 102 103 24 25 6 7 135 136 3 4 179 180 77 160 94 142 95 111 23 183 176 107 92 64 91 161 74 71 53 182 134 154 88 171 141 82 62 0 155 173 75 151 162 120 147 172 109 93</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_sound.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 121</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 135 143 127 128 19 20 102 103 77 160 92 183 97 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_output.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 186 143 127 128 19 20 102 77 160 91 2 157 176</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_lowspeed.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 99</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 160 85 54 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_loader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 160 183 161 76 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_ioctrl.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 124</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 160 161 149 170</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_input.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 138</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 160 174 64 89 91</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_input.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 105</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 95 111 23 174 64 89 159</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\m_sched.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 133</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 160 95 111 23 59 60 174 64 26 107 84 97 15 54 2 98 74 149 112 142</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_sound.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 123</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 95 111 23 167 118</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_led.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 145</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 160 86 112 181</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_output.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 178</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 95 111 23 157 122</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_cmd.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77 160 74 86 91 64 183 94 92 107 176 71 85 98 63 156 186 143 127 128 19 20 102 103</file>
         </tool>
       </inputs>
     </file>
@@ -759,1030 +648,247 @@
   </configuration>
   <configuration>
     <name>Flash Debug</name>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file>$PROJ_DIR$\..\Object\LMS_ARM.map</file>
-          <file>$PROJ_DIR$\..\Object\LMS_ARM.sim</file>
-          <file>$PROJ_DIR$\..\Object\LMS_ARM.d79</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Object\LMS_ARM.d79</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file>$PROJ_DIR$\..\Object\LMS_ARM.map</file>
-          <file>$PROJ_DIR$\..\Object\LMS_ARM.sim</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file>$PROJ_DIR$\at91SAM7S256_Remap.xcl</file>
-          <file>$PROJ_DIR$\..\Object\Cstartup.r79</file>
-          <file>$PROJ_DIR$\..\Object\Cstartup_SAM7.r79</file>
-          <file>$PROJ_DIR$\..\Object\c_button.r79</file>
-          <file>$PROJ_DIR$\..\Object\c_cmd.r79</file>
-          <file>$PROJ_DIR$\..\Object\c_comm.r79</file>
-          <file>$PROJ_DIR$\..\Object\c_display.r79</file>
-          <file>$PROJ_DIR$\..\Object\c_input.r79</file>
-          <file>$PROJ_DIR$\..\Object\c_ioctrl.r79</file>
-          <file>$PROJ_DIR$\..\Object\c_loader.r79</file>
-          <file>$PROJ_DIR$\..\Object\c_lowspeed.r79</file>
-          <file>$PROJ_DIR$\..\Object\c_output.r79</file>
-          <file>$PROJ_DIR$\..\Object\c_sound.r79</file>
-          <file>$PROJ_DIR$\..\Object\c_ui.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_bt.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_button.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_display.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_hispeed.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_input.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_ioctrl.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_loader.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_lowspeed.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_output.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_sound.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_timer.r79</file>
-          <file>$PROJ_DIR$\..\Object\d_usb.r79</file>
-          <file>$PROJ_DIR$\..\Object\m_sched.r79</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.r79</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_led.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_led.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_led.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_led.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_led.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_ui.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_ui.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$TOOLKIT_DIR$\inc\stdio.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
-          <file>$TOOLKIT_DIR$\inc\ctype.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtls.h</file>
-          <file>$TOOLKIT_DIR$\inc\xmtx.h</file>
-          <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocaleuse.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale_c.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtinfo.h</file>
-          <file>$TOOLKIT_DIR$\inc\time.h</file>
-          <file>$TOOLKIT_DIR$\inc\wchar.h</file>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ui.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ui.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\Display.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\LowBattery.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Font.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Step.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Cursor.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Incomming.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Running.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Port.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Ok.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_1.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_2.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_3.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_4.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_5.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_6.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_7.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_8.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_9.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_10.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_11.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_12.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_13.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_14.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_15.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\RCXintro_16.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Status.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Ui.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Mainmenu.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu01.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu02.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu03.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu04.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu05.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu06.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu07.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Submenu10.rms</file>
-          <file>$PROJ_DIR$\..\..\Source\Functions.inl</file>
-          <file>$PROJ_DIR$\..\..\Source\BtTest.inc</file>
-          <file>$PROJ_DIR$\..\..\Source\Test1.txt</file>
-          <file>$PROJ_DIR$\..\..\Source\Test2.txt</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_display.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_display.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_display.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_input.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_input.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\d_input.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.iom</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_ioctrl.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_ioctrl.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_ioctrl.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_loader.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_loader.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\d_loader.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_lowspeed.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_lowspeed.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_lowspeed.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_output.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_output.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$TOOLKIT_DIR$\inc\stdio.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$TOOLKIT_DIR$\inc\stdbool.h</file>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_output.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_sound.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_sound.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sound.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Include\Cstartup.s79</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file>$PROJ_DIR$\..\Object\Cstartup.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>AARM</name>
-          <file>$PROJ_DIR$\..\Include\AT91SAM7S256_inc.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Include\Cstartup_SAM7.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\Cstartup_SAM7.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Include\AT91SAM7S256.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_bt.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_bt.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_bt.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_bt.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_usb.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_usb.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_usb.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_usb.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_button.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_button.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_button.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_button.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_display.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_display.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_display.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_display.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_hispeed.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_hispeed.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_hispeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_hispeed.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_input.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_input.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\d_input.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_input.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_button.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_button.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\d_button.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_ioctrl.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_ioctrl.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_ioctrl.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_ioctrl.r</file>
-        </tool>
-      </inputs>
-    </file>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\Source\BtTest.inc</file>
+      <file>$PROJ_DIR$\..\Object\c_output.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_output.h</file>
+      <file>$PROJ_DIR$\..\Include\ymath.h</file>
+      <file>$PROJ_DIR$\..\Object\d_lowspeed.pbi</file>
+      <file>$PROJ_DIR$\..\Include\stdlib.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_loader.c</file>
+      <file>$PROJ_DIR$\..\Object\c_loader.pbi</file>
+      <file>$PROJ_DIR$\..\Object\LMS_ARM.rfw</file>
+      <file>$PROJ_DIR$\..\Object\Cstartup_SAM7.pbi</file>
+      <file>$PROJ_DIR$\..\Object\d_button.pbi</file>
+      <file>$PROJ_DIR$\..\..\Source\d_button.r</file>
+      <file>$PROJ_DIR$\..\Object\c_button.pbi</file>
+      <file>$PROJ_DIR$\..\Object\d_sound.pbi</file>
+      <file>$PROJ_DIR$\..\..\Source\c_comm.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_timer.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_usb.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_ioctrl.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_display.h</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_6.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_7.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\Functions.inl</file>
+      <file>$PROJ_DIR$\..\Object\c_lowspeed.pbi</file>
+      <file>$PROJ_DIR$\..\..\Source\Port.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\Ok.txt</file>
+      <file>$PROJ_DIR$\..\Include\ctype.h</file>
+      <file>$PROJ_DIR$\..\Include\time.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_usb.h</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_5.txt</file>
+      <file>$PROJ_DIR$\..\Object\c_button.r79</file>
+      <file>$PROJ_DIR$\..\Object\LMS_ARM.pbd</file>
+      <file>$PROJ_DIR$\..\Include\stdbool.h</file>
+      <file>$PROJ_DIR$\..\Object\d_timer.pbi</file>
+      <file>$PROJ_DIR$\..\..\Source\c_display.c</file>
+      <file>$PROJ_DIR$\..\Object\d_output.pbi</file>
+      <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
+      <file>$PROJ_DIR$\..\Lib\dl4tptinl8n.h</file>
+      <file>$PROJ_DIR$\..\Object\c_comm.pbi</file>
+      <file>$PROJ_DIR$\..\..\Source\c_button.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_button.c</file>
+      <file>$PROJ_DIR$\..\Include\ysizet.h</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_3.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_4.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\d_timer.r</file>
+      <file>$PROJ_DIR$\..\..\Source\d_lowspeed.c</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_1.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_2.txt</file>
+      <file>$PROJ_DIR$\at91SAM7S256_Remap.xcl</file>
+      <file>$PROJ_DIR$\..\..\Source\d_hispeed.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_display.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_button.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_bt.c</file>
+      <file>$PROJ_DIR$\..\Include\Cstartup_SAM7.c</file>
+      <file>$PROJ_DIR$\..\Include\Cstartup.s79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ui.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sound.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_output.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_lowspeed.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_loader.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ioctrl.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_input.c</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_11.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sound_adpcm.r</file>
+      <file>$PROJ_DIR$\..\Include\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\Source\Display.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\c_lowspeed.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_lowspeed.h</file>
+      <file>$PROJ_DIR$\..\Object\d_usb.r79</file>
+      <file>$PROJ_DIR$\..\Include\xtinfo.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_button.h</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_8.txt</file>
+      <file>$PROJ_DIR$\..\Include\sam7s256.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_comm.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_lowspeed.r</file>
+      <file>$PROJ_DIR$\..\..\Source\Running.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd_bytecodes.h</file>
+      <file>$PROJ_DIR$\..\Object\m_sched.pbi</file>
+      <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\d_usb.r</file>
+      <file>$PROJ_DIR$\..\Object\d_button.r79</file>
+      <file>$PROJ_DIR$\..\Include\xlocale_c.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_input.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_comm.iom</file>
+      <file>$PROJ_DIR$\..\Include\AT91SAM7S256_inc.h</file>
+      <file>$PROJ_DIR$\..\Object\c_display.pbi</file>
+      <file>$PROJ_DIR$\..\..\Source\m_sched.c</file>
+      <file>$PROJ_DIR$\..\Include\wchar.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu02.rms</file>
+      <file>$PROJ_DIR$\..\..\Source\Icons.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\d_loader.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd_drawing.inc</file>
+      <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
+      <file>$PROJ_DIR$\..\Object\d_display.r79</file>
+      <file>$PROJ_DIR$\..\Include\xlocale.h</file>
+      <file>$PROJ_DIR$\..\..\Source\Test2.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sound.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_loader.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_lowspeed.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_13.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_14.txt</file>
+      <file>$PROJ_DIR$\..\Object\c_loader.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Status.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\d_input.h</file>
+      <file>$PROJ_DIR$\..\Object\c_cmd.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_16.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\Ui.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\c_output.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sound.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ui.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
+      <file>$PROJ_DIR$\..\Object\Cstartup_SAM7.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sound.h</file>
+      <file>$PROJ_DIR$\..\Lib\dl4tptinl8n.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd.h</file>
+      <file>$PROJ_DIR$\..\Object\c_lowspeed.r79</file>
+      <file>$PROJ_DIR$\..\Include\math.h</file>
+      <file>$PROJ_DIR$\..\Object\c_output.pbi</file>
+      <file>$PROJ_DIR$\..\Include\stdio.h</file>
+      <file>$PROJ_DIR$\..\Object\c_ui.pbi</file>
+      <file>$PROJ_DIR$\..\Object\c_cmd.pbi</file>
+      <file>$PROJ_DIR$\..\Include\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\Object\c_sound.pbi</file>
+      <file>$PROJ_DIR$\..\Object\d_usb.pbi</file>
+      <file>$PROJ_DIR$\..\..\Source\d_hispeed.r</file>
+      <file>$PROJ_DIR$\..\Object\d_input.r79</file>
+      <file>$PROJ_DIR$\..\Include\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
+      <file>$PROJ_DIR$\..\Include\yvals.h</file>
+      <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
+      <file>$PROJ_DIR$\..\Object\c_comm.r79</file>
+      <file>$PROJ_DIR$\..\Object\c_ui.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sound.r</file>
+      <file>$PROJ_DIR$\..\Object\d_timer.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu05.rms</file>
+      <file>$PROJ_DIR$\..\Object\c_sound.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_output.r</file>
+      <file>$PROJ_DIR$\..\Object\d_sound.r79</file>
+      <file>$PROJ_DIR$\..\Object\c_ioctrl.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Fail.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\Wait.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\d_hispeed.h</file>
+      <file>$PROJ_DIR$\..\Object\m_sched.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_display.h</file>
+      <file>$PROJ_DIR$\..\Object\c_input.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_ioctrl.r</file>
+      <file>$PROJ_DIR$\..\..\Source\d_loader.r</file>
+      <file>$PROJ_DIR$\..\..\Source\Test1.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ui.h</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu06.rms</file>
+      <file>$PROJ_DIR$\..\..\Source\d_output.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ioctrl.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_display.r</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu03.rms</file>
+      <file>$PROJ_DIR$\..\Object\d_hispeed.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Info.txt</file>
+      <file>$PROJ_DIR$\..\Object\c_display.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Font.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_15.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\Mainmenu.rms</file>
+      <file>$PROJ_DIR$\..\..\Source\d_timer.h</file>
+      <file>$PROJ_DIR$\..\..\Source\Cursor.txt</file>
+      <file>$PROJ_DIR$\..\Include\xtls.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_output.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_input.r</file>
+      <file>$PROJ_DIR$\..\..\Source\modules.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu04.rms</file>
+      <file>$PROJ_DIR$\..\Object\d_bt.r79</file>
+      <file>$PROJ_DIR$\..\Include\AT91SAM7S256.h</file>
+      <file>$PROJ_DIR$\..\Object\d_loader.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_12.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd.c</file>
+      <file>$PROJ_DIR$\..\Object\d_loader.pbi</file>
+      <file>$PROJ_DIR$\..\Object\d_ioctrl.pbi</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_9.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\RCXintro_10.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sound.h</file>
+      <file>$PROJ_DIR$\..\Object\Cstartup.r79</file>
+      <file>$PROJ_DIR$\..\Object\d_input.pbi</file>
+      <file>$PROJ_DIR$\..\Object\c_ioctrl.pbi</file>
+      <file>$PROJ_DIR$\..\Object\d_hispeed.pbi</file>
+      <file>$PROJ_DIR$\..\Object\d_display.pbi</file>
+      <file>$PROJ_DIR$\..\Include\string.h</file>
+      <file>$PROJ_DIR$\..\Object\c_input.pbi</file>
+      <file>$PROJ_DIR$\..\Object\d_bt.pbi</file>
+      <file>$PROJ_DIR$\..\..\Source\d_ioctrl.h</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu07.rms</file>
+      <file>$PROJ_DIR$\..\..\Source\Submenu01.rms</file>
+      <file>$PROJ_DIR$\..\Include\xmtx.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_input.h</file>
+      <file>$PROJ_DIR$\..\Object\d_ioctrl.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
+      <file>$PROJ_DIR$\..\Object\d_lowspeed.r79</file>
+      <file>$PROJ_DIR$\..\Object\d_output.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\Devices.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\Connections.txt</file>
+      <file>$PROJ_DIR$\..\Include\xlocaleuse.h</file>
+      <file>$PROJ_DIR$\..\..\Source\LowBattery.txt</file>
+      <file>$PROJ_DIR$\..\Object\LMS_ARM.map</file>
+      <file>$PROJ_DIR$\..\..\Source\Step.txt</file>
+      <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\d_bt.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_bt.r</file>
+    </outputs>
     <file>
       <name>$PROJ_DIR$\..\..\Source\d_loader.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 173</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_loader.r79</file>
+          <file> 170</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 165 110 129 35 90 146 183 128 63 121 126 40 25 94 162 189 5 197 80 68 26 86</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_loader.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_loader.r</file>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$TOOLKIT_DIR$\inc\ctype.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtls.h</file>
-          <file>$TOOLKIT_DIR$\inc\xmtx.h</file>
-          <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocaleuse.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale_c.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtinfo.h</file>
-          <file>$TOOLKIT_DIR$\inc\time.h</file>
-          <file>$TOOLKIT_DIR$\inc\wchar.h</file>
+          <file> 92 165 110 129 35 90 146 183 128 63 36 121 126 40 25 94 162 189 5 197 80 68 26 86</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\d_lowspeed.c</name>
+      <name>$PROJ_DIR$\..\Object\LMS_ARM.rfw</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_lowspeed.r79</file>
+          <name>XLINK</name>
+          <file> 199</file>
         </tool>
       </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_lowspeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_lowspeed.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_output.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_output.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_output.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_output.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_sound.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_sound.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sound.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sound.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_timer.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_timer.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_timer.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_timer.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_led.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_led.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_led.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_led.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\m_sched.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\m_sched.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.c</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ui.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_cmd.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_cmd.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_output.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_input.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ui.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd_bytecodes.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_timer.h</file>
-          <file>$TOOLKIT_DIR$\inc\stdio.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
-          <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd_drawing.inc</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\src\main.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\Flash_Debug\Obj\main.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\SrcIAR\Board.h</file>
-          <file>$PROJ_DIR$\..\..\include\AT91SAM7S64.h</file>
-          <file>$PROJ_DIR$\..\..\include\lib_AT91SAM7S64.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_avrcomm.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_avrcomm.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_avrcomm.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_avrcomm.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\SrcIAR\Cstartup.s79</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file>$PROJ_DIR$\Flash_Debug\Obj\Cstartup.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>AARM</name>
-          <file>$PROJ_DIR$\..\..\include\AT91SAM7S64_inc.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\main.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\main.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Include\Board.h</file>
-          <file>$PROJ_DIR$\..\Include\AT91SAM7S64.h</file>
-          <file>$PROJ_DIR$\..\Include\lib_AT91SAM7S64.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_hispeed.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_hispeed.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_hispeed.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_hispeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_hispeed.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_net.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_net.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_net.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_net.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_avrcomm.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_avrcomm.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_avrcomm.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_avrcomm.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\SrcIAR\Cstartup_SAM7.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\Flash_Debug\Obj\Cstartup_SAM7.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\SrcIAR\Board.h</file>
-          <file>$PROJ_DIR$\..\..\include\AT91SAM7S64.h</file>
-          <file>$PROJ_DIR$\..\..\include\lib_AT91SAM7S64.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_bt.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_bt.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_bt.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_bt.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_bt.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_usb.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_usb.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_usb.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_usb.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_usb.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_net.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_net.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_net.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_net.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_motor.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_motor.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_motor.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_motor.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_motor.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Flash_Debug\Exe\Basic.d79</name>
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file>$PROJ_DIR$\at91SAM7S64_NoRemap.xcl</file>
-          <file>$PROJ_DIR$\Flash_Debug\Obj\Cstartup.r79</file>
-          <file>$PROJ_DIR$\Flash_Debug\Obj\Cstartup_SAM7.r79</file>
-          <file>$PROJ_DIR$\Flash_Debug\Obj\main.r79</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.r79</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_sensor.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_sensor.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sensor.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sensor.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sensor.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_motor.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_motor.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_motor.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_motor.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_sensor.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\d_sensor.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sensor.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sensor.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Flash_Debug\Exe\LMS_ARM.d79</name>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file>$PROJ_DIR$\at91SAM7S64_NoRemap.xcl</file>
-          <file>$PROJ_DIR$\Flash_Debug\Obj\Cstartup.r79</file>
-          <file>$PROJ_DIR$\Flash_Debug\Obj\Cstartup_SAM7.r79</file>
-          <file>$PROJ_DIR$\Flash_Debug\Obj\main.r79</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.r79</file>
+          <file> 47 178 111 29 104 130 156 144 138 101 115 1 135 131 168 79 93 154 125 191 170 193 194 137 133 67 142 113</file>
         </tool>
       </inputs>
     </file>
@@ -1790,82 +896,100 @@
       <name>$PROJ_DIR$\..\..\Source\c_comm.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Object\c_comm.r79</file>
+          <file> 130</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 165 82 201 166 109 87 192 72 27 141 202 183 128 63 121 126 40 25 94 162 189 5 197 80 68 26 86</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ui.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_usb.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_hispeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_bt.h</file>
-          <file>$TOOLKIT_DIR$\inc\string.h</file>
-          <file>$TOOLKIT_DIR$\inc\yvals.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.h</file>
-          <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
-          <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
-          <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
-          <file>$TOOLKIT_DIR$\inc\ctype.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtls.h</file>
-          <file>$TOOLKIT_DIR$\inc\xmtx.h</file>
-          <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocaleuse.h</file>
-          <file>$TOOLKIT_DIR$\inc\xlocale_c.h</file>
-          <file>$TOOLKIT_DIR$\inc\xtinfo.h</file>
-          <file>$TOOLKIT_DIR$\inc\time.h</file>
-          <file>$TOOLKIT_DIR$\inc\wchar.h</file>
+          <file> 92 165 82 201 166 109 87 192 72 27 141 202 183 128 63 36 121 126 40 25 94 162 189 5 197 80 68 26 86</file>
         </tool>
       </inputs>
     </file>
-  </configuration>
-  <configuration>
-    <name>RAM_Debug</name>
     <file>
-      <name>[ROOT_NODE]</name>
+      <name>$PROJ_DIR$\..\..\Source\d_timer.c</name>
       <outputs>
         <tool>
-          <name>XLINK</name>
-          <file>$PROJ_DIR$\RAM_Debug\List\LMS_ARM.map</file>
-          <file>$PROJ_DIR$\RAM_Debug\Exe\LMS_ARM.d79</file>
+          <name>BICOMP</name>
+          <file> 32</file>
         </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Include\sam7s256.c</name>
-      <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\sam7s256.r79</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\c_led.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_led.r79</file>
+          <file> 133</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 110 129 35 160 43</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_led.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_led.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_led.h</file>
+          <file> 92 110 129 35 160 43</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_usb.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 123</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92 110 129 35 27 78</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92 110 129 35 27 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_ioctrl.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 174</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 191</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 183 128 63 121 126 40 92 110 129 35 186 145</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 183 128 63 36 121 126 40 92 110 129 35 186 145</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Object\LMS_ARM.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 9 12 120 37 84 184 180 7 22 117 122 119 185 10 182 181 179 174 173 4 34 13 32 123 76</file>
         </tool>
       </inputs>
     </file>
@@ -1873,93 +997,192 @@
       <name>$PROJ_DIR$\..\..\Source\c_display.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_display.r79</file>
+          <file> 156</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 183 128 63 121 126 40 92 165 192 18 143</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_display.h</file>
+          <file> 183 128 63 36 121 126 40 92 165 192 18 143</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\c_ioctrl.c</name>
+      <name>$PROJ_DIR$\..\..\Source\c_button.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 12</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_ioctrl.r79</file>
+          <file> 29</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 165 38 127 69</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_ioctrl.h</file>
+          <file> 92 165 38 127 69</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\c_loader.c</name>
+      <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
+          <name>XLINK</name>
+          <file> 8 199</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_lowspeed.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_loader.r79</file>
+          <file> 193</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 110 129 35 66 73</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.h</file>
+          <file> 92 110 129 35 66 73</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\c_lowspeed.c</name>
+      <name>$PROJ_DIR$\..\..\Source\d_hispeed.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 181</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_lowspeed.r79</file>
+          <file> 154</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 110 129 35 141 124</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_lowspeed.h</file>
+          <file> 92 110 129 35 141 124</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\c_sound.c</name>
+      <name>$PROJ_DIR$\..\..\Source\d_display.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 182</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_sound.r79</file>
+          <file> 93</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 110 129 35 143 152</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sound.h</file>
+          <file> 92 110 129 35 143 152</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_button.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92 110 129 35 69 11</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92 110 129 35 69 11</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_bt.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 185</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 168</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92 165 110 129 35 202 203 183 128 63 121 126 40</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92 165 110 129 35 202 203 183 128 63 36 121 126 40</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Include\Cstartup_SAM7.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 111</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 169</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 169</file>
         </tool>
       </inputs>
     </file>
@@ -1968,189 +1191,220 @@
       <outputs>
         <tool>
           <name>AARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\Cstartup.r79</file>
+          <file> 178</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>AARM</name>
-          <file>$PROJ_DIR$\..\Include\AT91SAM7S64_inc.h</file>
+          <file> 83</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\Include\Cstartup_SAM7.c</name>
+      <name>$PROJ_DIR$\..\..\Source\c_ui.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 119</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\Cstartup_SAM7.r79</file>
+          <file> 131</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 118 128 63 121 126 40 183 25 94 162 189 5 197 80 68 26 86 92 165 109 148 110 129 35 192 201 127 108 77 107 166 87 82 98 64 198 157 200 161 74 23 24 140 139 155 89 45 46 41 42 28 19 20 70 175 176 61 171 99 100 158 105 102 195 196 106 159 188 88 153 167 134 149 187 21 0 147 95</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\Include\Board.h</file>
-          <file>$PROJ_DIR$\..\Include\AT91SAM7S64.h</file>
-          <file>$PROJ_DIR$\..\Include\lib_AT91SAM7S64.h</file>
+          <file> 118 128 63 36 121 126 40 183 25 94 162 189 5 197 80 68 26 86 92 165 109 148 110 129 35 192 201 127 108 77 107 166 87 82 98 64 198 157 200 161 74 23 24 140 139 155 89 45 46 41 42 28 19 20 70 175 176 61 171 99 100 158 105 102 195 196 106 159 188 88 153 167 134 149 187 21 0 147 95</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\d_bt.c</name>
+      <name>$PROJ_DIR$\..\..\Source\c_sound.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 122</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_bt.r79</file>
+          <file> 135</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 5 128 63 121 126 40 183 92 165 108 201 112 177</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_bt.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_bt.r</file>
+          <file> 5 128 63 36 121 126 40 183 92 165 108 201 112 177</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\d_usb.c</name>
+      <name>$PROJ_DIR$\..\..\Source\c_output.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 117</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_usb.r79</file>
+          <file> 1</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 118 128 63 121 126 40 31 92 165 107 2 163 192</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_usb.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_usb.r</file>
+          <file> 118 128 63 36 121 126 40 31 92 165 107 2 163 192</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\d_button.c</name>
+      <name>$PROJ_DIR$\..\..\Source\c_lowspeed.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_button.r79</file>
+          <file> 115</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 165 98 77 65 66</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_button.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_button.r</file>
+          <file> 92 165 98 77 65 66</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\d_display.c</name>
+      <name>$PROJ_DIR$\..\..\Source\c_loader.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 7</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_display.r79</file>
+          <file> 101</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 165 201 166 90 97</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_display.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_display.r</file>
+          <file> 92 165 201 166 90 97</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\d_hispeed.c</name>
+      <name>$PROJ_DIR$\..\..\Source\c_ioctrl.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 180</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_hispeed.r79</file>
+          <file> 138</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 165 166 151 186</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_hispeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_hispeed.r</file>
+          <file> 92 165 166 151 186</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\c_button.c</name>
+      <name>$PROJ_DIR$\..\..\Source\c_input.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 184</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_button.r79</file>
+          <file> 144</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 165 190 77 103 107 201 183 128 63 121 126 40</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\d_button.h</file>
+          <file> 92 165 190 77 103 107 201 183 128 63 36 121 126 40</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\d_ioctrl.c</name>
+      <name>$PROJ_DIR$\..\..\Source\d_input.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 179</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_ioctrl.r79</file>
+          <file> 125</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 110 129 35 190 77 103 164</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_ioctrl.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_ioctrl.r</file>
+          <file> 92 110 129 35 190 77 103 164</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\d_lowspeed.c</name>
+      <name>$PROJ_DIR$\..\..\Source\m_sched.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 76</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_lowspeed.r79</file>
+          <file> 142</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 92 165 110 129 35 71 72 190 77 38 127 97 112 18 65 2 114 75 87 151 148</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_lowspeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_lowspeed.r</file>
+          <file> 92 165 110 129 35 71 72 190 77 38 127 97 112 18 65 2 114 75 87 151 148</file>
         </tool>
       </inputs>
     </file>
@@ -2158,19 +1412,206 @@
       <name>$PROJ_DIR$\..\..\Source\d_sound.c</name>
       <outputs>
         <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+        <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_sound.r79</file>
+          <file> 137</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92 110 129 35 177 132 62</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92 110 129 35 177 132 62</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_output.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 194</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92 110 129 35 163 136</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92 110 129 35 163 136</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_cmd.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 120</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 104</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92 165 87 107 77 201 109 108 127 192 82 98 110 129 35 114 75 160 118 128 63 121 126 40 183 5 116 3 91</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92 165 87 107 77 201 109 108 127 192 82 98 110 129 35 114 75 160 118 128 63 36 121 126 40 183 5 116 3 91</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>RAM_Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\m_sched.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_button.r</file>
+      <file>$PROJ_DIR$\..\..\Source\c_comm.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_timer.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_usb.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_ioctrl.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_display.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_display.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sensor.r</file>
+      <file>$PROJ_DIR$\..\..\Source\d_usb.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\c_led.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_motor.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\c_button.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_display.c</file>
+      <file>$PROJ_DIR$\..\Include\lib_AT91SAM7S64.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_button.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_button.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_timer.r</file>
+      <file>$PROJ_DIR$\..\..\Source\d_led.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_lowspeed.c</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_sound.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_hispeed.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_display.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_button.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_bt.c</file>
+      <file>$PROJ_DIR$\..\Include\Cstartup_SAM7.c</file>
+      <file>$PROJ_DIR$\..\Include\Cstartup.s79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sound.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_lowspeed.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_loader.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ioctrl.c</file>
+      <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_hispeed.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_lowspeed.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_lowspeed.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_button.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_usb.r79</file>
+      <file>$PROJ_DIR$\..\Include\sam7s256.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_comm.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_lowspeed.r</file>
+      <file>$PROJ_DIR$\SrcIAR\Cstartup_SAM7.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_motor.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\Cstartup_SAM7.r79</file>
+      <file>$PROJ_DIR$\SrcIAR\Cstartup.s79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_usb.r</file>
+      <file>$PROJ_DIR$\at91SAM7S64_16KRAM.xcl</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\c_ioctrl.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_comm.iom</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_led.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\m_sched.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\c_motor.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\c_sound.r79</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_lowspeed.r79</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_button.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sound.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_loader.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_lowspeed.iom</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\main.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_led.iom</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\Cstartup.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_motor.r</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sound.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\List\LMS_ARM.map</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sound.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sensor.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_hispeed.r</file>
+      <file>$PROJ_DIR$\..\..\Source\c_button.iom</file>
+      <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_sensor.r79</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\c_comm.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_led.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sound.r</file>
+      <file>$PROJ_DIR$\RAM_Debug\Exe\LMS_ARM.d79</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\sam7s256.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_hispeed.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_led.r</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_timer.r79</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\c_display.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_display.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_ioctrl.r</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\c_loader.r79</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_ioctrl.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sensor.iom</file>
+      <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_led.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ioctrl.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_motor.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_display.r</file>
+      <file>$PROJ_DIR$\..\src\main.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sensor.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\c_cmd.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_motor.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_timer.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_sensor.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_motor.c</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\c_lowspeed.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\modules.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_ioctrl.iom</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\c_sensor.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\c_cmd.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sound.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_ioctrl.h</file>
+      <file>$PROJ_DIR$\..\Include\AT91SAM7S64_inc.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_display.iom</file>
+      <file>$PROJ_DIR$\..\Include\Board.h</file>
+      <file>$PROJ_DIR$\..\Include\AT91SAM7S64.h</file>
+      <file>$PROJ_DIR$\RAM_Debug\Obj\d_bt.r79</file>
+      <file>$PROJ_DIR$\..\..\Source\d_led.h</file>
+      <file>$PROJ_DIR$\..\..\Source\c_motor.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\main.c</file>
+      <file>$PROJ_DIR$\..\..\Source\d_sensor.c</file>
+      <file>$PROJ_DIR$\..\..\Source\c_loader.iom</file>
+      <file>$PROJ_DIR$\..\..\Source\d_bt.h</file>
+      <file>$PROJ_DIR$\..\..\Source\d_bt.r</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_comm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 73</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sound.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sound.r</file>
+          <file> 52 100 47 38 9 78 116</file>
         </tool>
       </inputs>
     </file>
@@ -2179,117 +1620,271 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_timer.r79</file>
+          <file> 80</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_timer.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_timer.r</file>
+          <file> 52 64 71 31 96 17</file>
         </tool>
       </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_usb.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 64 71 31 9 44</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_ioctrl.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 85</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 64 71 31 105 83</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_display.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 81</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 100 107 6 82</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_button.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 100 15 70 35</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 65 76</file>
+        </tool>
+      </outputs>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\Source\d_led.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_led.r79</file>
+          <file> 48</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_led.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_led.r</file>
+          <file> 52 64 71 31 111 79</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\m_sched.c</name>
+      <name>$PROJ_DIR$\..\..\Source\d_lowspeed.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\m_sched.r79</file>
+          <file> 54</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.c</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sensor.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_button.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_loader.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sound.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_display.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_lowspeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_motor.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_ioctrl.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_led.h</file>
+          <file> 52 64 71 31 34 39</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\c_cmd.c</name>
+      <name>$PROJ_DIR$\..\..\Source\d_hispeed.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_cmd.r79</file>
+          <file> 32</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_led.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_cmd.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_timer.h</file>
+          <file> 52 64 71 31 78 69</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\src\main.c</name>
+      <name>$PROJ_DIR$\..\..\Source\d_display.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\main.r79</file>
+          <file> 7</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 64 71 31 82 91</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\SrcIAR\Cstartup.s79</name>
+      <name>$PROJ_DIR$\..\..\Source\d_button.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 64 71 31 35 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_bt.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 110</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 64 71 31 116 117</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Include\Cstartup_SAM7.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 108 109 14</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Include\Cstartup.s79</name>
       <outputs>
         <tool>
           <name>AARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\Cstartup.r79</file>
+          <file> 61</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 106</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\main.c</name>
+      <name>$PROJ_DIR$\..\..\Source\c_sound.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\main.r79</file>
+          <file> 53</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 100 63 66 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_lowspeed.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 99</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 100 58 33 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_loader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 84</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 100 115 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_ioctrl.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 100 101 89 105</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Include\sam7s256.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 77</file>
         </tool>
       </outputs>
     </file>
@@ -2298,85 +1893,46 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\Cstartup_SAM7.r79</file>
+          <file> 42</file>
         </tool>
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\c_motor.c</name>
+      <name>$PROJ_DIR$\SrcIAR\Cstartup.s79</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 61</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\m_sched.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_motor.r79</file>
+          <file> 0</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_motor.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_motor.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_motor.h</file>
+          <file> 52 100 64 71 31 37 38 67 15 57 66 6 33 41 68 50 89 74</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\c_sensor.c</name>
+      <name>$PROJ_DIR$\..\..\Source\d_sound.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_sensor.r79</file>
+          <file> 20</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sensor.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_sensor.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sensor.h</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_motor.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_motor.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_motor.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_motor.r</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\Source\d_sensor.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_sensor.r79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\m_sched.h</file>
-          <file>$PROJ_DIR$\..\Include\sam7s256.h</file>
-          <file>$PROJ_DIR$\..\Include\ioat91sam7s64.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sensor.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_sensor.r</file>
+          <file> 52 64 71 31 104 75</file>
         </tool>
       </inputs>
     </file>
@@ -2385,67 +1941,130 @@
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file>$PROJ_DIR$\RAM_Debug\List\LMS_ARM.map</file>
+          <file> 65</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file>$PROJ_DIR$\at91SAM7S64_16KRAM.xcl</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\Cstartup.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\Cstartup_SAM7.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_button.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_cmd.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_comm.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_display.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_ioctrl.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_led.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_loader.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_lowspeed.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_motor.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_sensor.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_sound.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_bt.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_button.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_display.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_hispeed.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_ioctrl.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_led.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_lowspeed.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_motor.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_sensor.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_sound.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_timer.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\d_usb.r79</file>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\m_sched.r79</file>
-          <file>$TOOLKIT_DIR$\lib\dl4tptinl8n.r79</file>
+          <file> 45 61 42 12 94 73 81 46 10 84 99 51 102 53 110 55 7 32 85 48 54 90 72 20 80 36 0 87</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Source\c_comm.c</name>
+      <name>$PROJ_DIR$\..\..\Source\c_led.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\RAM_Debug\Obj\c_comm.r79</file>
+          <file> 10</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file>$PROJ_DIR$\..\..\Source\stdconst.h</file>
-          <file>$PROJ_DIR$\..\..\Source\modules.h</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.iom</file>
-          <file>$PROJ_DIR$\..\..\Source\c_comm.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_usb.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_hispeed.h</file>
-          <file>$PROJ_DIR$\..\..\Source\d_bt.h</file>
+          <file> 52 100 60 74 111</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_motor.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 64 71 31 11 62</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_sensor.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 100 86 67 93</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_motor.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 51</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 100 112 41 11</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\c_cmd.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 94</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 100 50 60 68 96</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\d_sensor.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 64 71 31 93 8</file>
         </tool>
       </inputs>
     </file>
     <forcedrebuild>
       <name>[MULTI_TOOL]</name>
       <tool>XLINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
     </forcedrebuild>
   </configuration>
 </project>

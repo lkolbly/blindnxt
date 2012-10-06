@@ -12,7 +12,7 @@
       <name>General</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>8</version>
+        <version>9</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -33,7 +33,7 @@
         </option>
         <option>
           <name>Variant</name>
-          <version>2</version>
+          <version>5</version>
           <state>0</state>
         </option>
         <option>
@@ -80,10 +80,6 @@
           <state>1</state>
         </option>
         <option>
-          <name>OGChipSelect</name>
-          <state>$TOOLKIT_DIR$\config\chip\Atmel\AT91SAM7S64.i79</state>
-        </option>
-        <option>
           <name>GRuntimeLibSelect</name>
           <version>0</version>
           <state>1</state>
@@ -126,21 +122,19 @@
           <name>GeneralMisraVerbose</name>
           <state>0</state>
         </option>
+        <option>
+          <name>OGChipSelectEditMenu</name>
+          <state>AT91SAM7S64	Atmel AT91SAM7S64</state>
+        </option>
       </data>
     </settings>
     <settings>
       <name>ICCARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>11</version>
+        <version>14</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
-        <option>
-          <name>CCIncludePaths</name>
-          <state>$TOOLKIT_DIR$\INC\</state>
-          <state>$PROJ_DIR$\srciar\</state>
-          <state>$PROJ_DIR$\..\..\</state>
-        </option>
         <option>
           <name>CCDefines</name>
           <state>ESS</state>
@@ -214,10 +208,6 @@
           <name>CCAllowList</name>
           <version>1</version>
           <state>1111111</state>
-        </option>
-        <option>
-          <name>CCMakeLibraryModule</name>
-          <state>0</state>
         </option>
         <option>
           <name>CCObjUseModuleName</name>
@@ -329,13 +319,43 @@
           <name>CompilerMisraOverride</name>
           <state>0</state>
         </option>
+        <option>
+          <name>CCModuleTypeOverride</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCModuleType</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCModuleTypeCmdlineProducer</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCIncludePath2</name>
+          <state>$PROJ_DIR$\srciar\</state>
+          <state>$PROJ_DIR$\..\..\</state>
+        </option>
+        <option>
+          <name>CCStdIncCheck</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCStdIncludePath</name>
+          <state>###Uninitialized###</state>
+        </option>
+        <option>
+          <name>CCInlineThreshold</name>
+          <version>0</version>
+          <state>1</state>
+        </option>
       </data>
     </settings>
     <settings>
       <name>AARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>5</version>
+        <version>7</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -378,10 +398,6 @@
         <option>
           <name>ADebug</name>
           <state>1</state>
-        </option>
-        <option>
-          <name>MakeLibrary</name>
-          <state>0</state>
         </option>
         <option>
           <name>AltRegisterNames</name>
@@ -456,57 +472,11 @@
           <state>0</state>
         </option>
         <option>
-          <name>UndefAsm</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefFile</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefLine</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefTime</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefDate</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefTid</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefVer</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>AIncludes</name>
-          <state>$TOOLKIT_DIR$\INC\</state>
-          <state>$PROJ_DIR$\srciar\</state>
-          <state>$PROJ_DIR$\..\..\include\</state>
-        </option>
-        <option>
           <name>AProcessor</name>
           <state>1</state>
         </option>
         <option>
-          <name>AExtraOptionsCheck</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>AExtraOptions</name>
-          <state></state>
-        </option>
-        <option>
           <name>AFpuProcessor</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefLittleEndian</name>
           <state>1</state>
         </option>
         <option>
@@ -516,6 +486,35 @@
         <option>
           <name>AMultibyteSupport</name>
           <state>0</state>
+        </option>
+        <option>
+          <name>ALimitErrorsCheck</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>ALimitErrorsEdit</name>
+          <state>100</state>
+        </option>
+        <option>
+          <name>AIgnoreStdInclude</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>AStdIncludes</name>
+          <state>$TOOLKIT_DIR$\INC\</state>
+        </option>
+        <option>
+          <name>AUserIncludes</name>
+          <state>$PROJ_DIR$\srciar\</state>
+          <state>$PROJ_DIR$\..\..\include\</state>
+        </option>
+        <option>
+          <name>AExtraOptionsCheckV2</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>AExtraOptionsV2</name>
+          <state></state>
         </option>
       </data>
     </settings>
@@ -544,7 +543,7 @@
       <name>XLINK</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>17</version>
+        <version>18</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -557,13 +556,13 @@
         </option>
         <option>
           <name>OutputFormat</name>
-          <version>10</version>
+          <version>11</version>
           <state>16</state>
         </option>
         <option>
           <name>FormatVariant</name>
-          <version>6</version>
-          <state>15</state>
+          <version>8</version>
+          <state>17</state>
         </option>
         <option>
           <name>SecondaryOutputFile</name>
@@ -743,12 +742,12 @@
         </option>
         <option>
           <name>ExtraOutputFormat</name>
-          <version>10</version>
+          <version>11</version>
           <state>23</state>
         </option>
         <option>
           <name>ExtraFormatVariant</name>
-          <version>6</version>
+          <version>8</version>
           <state>2</state>
         </option>
         <option>
@@ -791,6 +790,14 @@
           <name>XLinkMisraHandler</name>
           <state>0</state>
         </option>
+        <option>
+          <name>CrcAlign</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>CrcInitialValue</name>
+          <state>0x0</state>
+        </option>
       </data>
     </settings>
     <settings>
@@ -830,7 +837,7 @@
       <name>General</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>8</version>
+        <version>9</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -851,7 +858,7 @@
         </option>
         <option>
           <name>Variant</name>
-          <version>2</version>
+          <version>5</version>
           <state>0</state>
         </option>
         <option>
@@ -898,10 +905,6 @@
           <state>1</state>
         </option>
         <option>
-          <name>OGChipSelect</name>
-          <state>$PROJ_DIR$\AT91SAM7S256.i79</state>
-        </option>
-        <option>
           <name>GRuntimeLibSelect</name>
           <version>0</version>
           <state>3</state>
@@ -944,20 +947,19 @@
           <name>GeneralMisraVerbose</name>
           <state>0</state>
         </option>
+        <option>
+          <name>OGChipSelectEditMenu</name>
+          <state>AT91SAM7S256	Atmel AT91SAM7S256</state>
+        </option>
       </data>
     </settings>
     <settings>
       <name>ICCARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>11</version>
+        <version>14</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
-        <option>
-          <name>CCIncludePaths</name>
-          <state>$PROJ_DIR$\..\..\</state>
-          <state>$PROJ_DIR$\..\Include\</state>
-        </option>
         <option>
           <name>CCDefines</name>
           <state>PROTOTYPE_PCB_4</state>
@@ -1032,10 +1034,6 @@
           <name>CCAllowList</name>
           <version>1</version>
           <state>1111111</state>
-        </option>
-        <option>
-          <name>CCMakeLibraryModule</name>
-          <state>0</state>
         </option>
         <option>
           <name>CCObjUseModuleName</name>
@@ -1147,13 +1145,43 @@
           <name>CompilerMisraOverride</name>
           <state>0</state>
         </option>
+        <option>
+          <name>CCModuleTypeOverride</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCModuleType</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCModuleTypeCmdlineProducer</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCIncludePath2</name>
+          <state>$PROJ_DIR$\..\..\</state>
+          <state>$PROJ_DIR$\..\Include\</state>
+        </option>
+        <option>
+          <name>CCStdIncCheck</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>CCStdIncludePath</name>
+          <state>$TOOLKIT_DIR$\INC\</state>
+        </option>
+        <option>
+          <name>CCInlineThreshold</name>
+          <version>0</version>
+          <state>1</state>
+        </option>
       </data>
     </settings>
     <settings>
       <name>AARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>5</version>
+        <version>7</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -1196,10 +1224,6 @@
         <option>
           <name>ADebug</name>
           <state>1</state>
-        </option>
-        <option>
-          <name>MakeLibrary</name>
-          <state>0</state>
         </option>
         <option>
           <name>AltRegisterNames</name>
@@ -1274,55 +1298,11 @@
           <state>0</state>
         </option>
         <option>
-          <name>UndefAsm</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefFile</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefLine</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefTime</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefDate</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefTid</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefVer</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>AIncludes</name>
-          <state>$PROJ_DIR$\..\..\include\</state>
-        </option>
-        <option>
           <name>AProcessor</name>
           <state>1</state>
         </option>
         <option>
-          <name>AExtraOptionsCheck</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>AExtraOptions</name>
-          <state></state>
-        </option>
-        <option>
           <name>AFpuProcessor</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefLittleEndian</name>
           <state>1</state>
         </option>
         <option>
@@ -1332,6 +1312,34 @@
         <option>
           <name>AMultibyteSupport</name>
           <state>0</state>
+        </option>
+        <option>
+          <name>ALimitErrorsCheck</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>ALimitErrorsEdit</name>
+          <state>100</state>
+        </option>
+        <option>
+          <name>AIgnoreStdInclude</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>AStdIncludes</name>
+          <state>$TOOLKIT_DIR$\INC\</state>
+        </option>
+        <option>
+          <name>AUserIncludes</name>
+          <state>$PROJ_DIR$\..\..\include\</state>
+        </option>
+        <option>
+          <name>AExtraOptionsCheckV2</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>AExtraOptionsV2</name>
+          <state></state>
         </option>
       </data>
     </settings>
@@ -1360,26 +1368,26 @@
       <name>XLINK</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>17</version>
+        <version>18</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
           <name>XOutOverride</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>OutputFile</name>
-          <state>LMS_ARM.d79</state>
+          <state>LMS_ARM.rfw</state>
         </option>
         <option>
           <name>OutputFormat</name>
-          <version>10</version>
-          <state>16</state>
+          <version>11</version>
+          <state>57</state>
         </option>
         <option>
           <name>FormatVariant</name>
-          <version>6</version>
-          <state>15</state>
+          <version>8</version>
+          <state>2</state>
         </option>
         <option>
           <name>SecondaryOutputFile</name>
@@ -1527,7 +1535,7 @@
         </option>
         <option>
           <name>DebugInformation</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>RuntimeControl</name>
@@ -1547,11 +1555,11 @@
         </option>
         <option>
           <name>GenerateExtraOutput</name>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>XExtraOutOverride</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>ExtraOutputFile</name>
@@ -1559,12 +1567,12 @@
         </option>
         <option>
           <name>ExtraOutputFormat</name>
-          <version>10</version>
+          <version>11</version>
           <state>60</state>
         </option>
         <option>
           <name>ExtraFormatVariant</name>
-          <version>6</version>
+          <version>8</version>
           <state>2</state>
         </option>
         <option>
@@ -1607,6 +1615,14 @@
           <name>XLinkMisraHandler</name>
           <state>0</state>
         </option>
+        <option>
+          <name>CrcAlign</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>CrcInitialValue</name>
+          <state>0x0</state>
+        </option>
       </data>
     </settings>
     <settings>
@@ -1646,7 +1662,7 @@
       <name>General</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>8</version>
+        <version>9</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -1667,7 +1683,7 @@
         </option>
         <option>
           <name>Variant</name>
-          <version>2</version>
+          <version>5</version>
           <state>0</state>
         </option>
         <option>
@@ -1714,10 +1730,6 @@
           <state>1</state>
         </option>
         <option>
-          <name>OGChipSelect</name>
-          <state>$PROJ_DIR$\AT91SAM7S256.i79</state>
-        </option>
-        <option>
           <name>GRuntimeLibSelect</name>
           <version>0</version>
           <state>3</state>
@@ -1760,20 +1772,19 @@
           <name>GeneralMisraVerbose</name>
           <state>0</state>
         </option>
+        <option>
+          <name>OGChipSelectEditMenu</name>
+          <state>AT91SAM7S256	Atmel AT91SAM7S256</state>
+        </option>
       </data>
     </settings>
     <settings>
       <name>ICCARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>11</version>
+        <version>14</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
-        <option>
-          <name>CCIncludePaths</name>
-          <state>$PROJ_DIR$\..\..\</state>
-          <state>$PROJ_DIR$\..\Include\</state>
-        </option>
         <option>
           <name>CCDefines</name>
           <state>PROTOTYPE_PCB_4</state>
@@ -1848,10 +1859,6 @@
           <name>CCAllowList</name>
           <version>1</version>
           <state>1111111</state>
-        </option>
-        <option>
-          <name>CCMakeLibraryModule</name>
-          <state>0</state>
         </option>
         <option>
           <name>CCObjUseModuleName</name>
@@ -1963,13 +1970,43 @@
           <name>CompilerMisraOverride</name>
           <state>0</state>
         </option>
+        <option>
+          <name>CCModuleTypeOverride</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCModuleType</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCModuleTypeCmdlineProducer</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCIncludePath2</name>
+          <state>$PROJ_DIR$\..\..\</state>
+          <state>$PROJ_DIR$\..\Include\</state>
+        </option>
+        <option>
+          <name>CCStdIncCheck</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>CCStdIncludePath</name>
+          <state>###Uninitialized###</state>
+        </option>
+        <option>
+          <name>CCInlineThreshold</name>
+          <version>0</version>
+          <state>1</state>
+        </option>
       </data>
     </settings>
     <settings>
       <name>AARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>5</version>
+        <version>7</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -2012,10 +2049,6 @@
         <option>
           <name>ADebug</name>
           <state>1</state>
-        </option>
-        <option>
-          <name>MakeLibrary</name>
-          <state>0</state>
         </option>
         <option>
           <name>AltRegisterNames</name>
@@ -2090,55 +2123,11 @@
           <state>0</state>
         </option>
         <option>
-          <name>UndefAsm</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefFile</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefLine</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefTime</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefDate</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefTid</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefVer</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>AIncludes</name>
-          <state>$PROJ_DIR$\..\..\include\</state>
-        </option>
-        <option>
           <name>AProcessor</name>
           <state>1</state>
         </option>
         <option>
-          <name>AExtraOptionsCheck</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>AExtraOptions</name>
-          <state></state>
-        </option>
-        <option>
           <name>AFpuProcessor</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>UndefLittleEndian</name>
           <state>1</state>
         </option>
         <option>
@@ -2148,6 +2137,34 @@
         <option>
           <name>AMultibyteSupport</name>
           <state>0</state>
+        </option>
+        <option>
+          <name>ALimitErrorsCheck</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>ALimitErrorsEdit</name>
+          <state>100</state>
+        </option>
+        <option>
+          <name>AIgnoreStdInclude</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>AStdIncludes</name>
+          <state>$TOOLKIT_DIR$\INC\</state>
+        </option>
+        <option>
+          <name>AUserIncludes</name>
+          <state>$PROJ_DIR$\..\..\include\</state>
+        </option>
+        <option>
+          <name>AExtraOptionsCheckV2</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>AExtraOptionsV2</name>
+          <state></state>
         </option>
       </data>
     </settings>
@@ -2176,7 +2193,7 @@
       <name>XLINK</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>17</version>
+        <version>18</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -2189,13 +2206,13 @@
         </option>
         <option>
           <name>OutputFormat</name>
-          <version>10</version>
+          <version>11</version>
           <state>16</state>
         </option>
         <option>
           <name>FormatVariant</name>
-          <version>6</version>
-          <state>15</state>
+          <version>8</version>
+          <state>17</state>
         </option>
         <option>
           <name>SecondaryOutputFile</name>
@@ -2375,12 +2392,12 @@
         </option>
         <option>
           <name>ExtraOutputFormat</name>
-          <version>10</version>
+          <version>11</version>
           <state>57</state>
         </option>
         <option>
           <name>ExtraFormatVariant</name>
-          <version>6</version>
+          <version>8</version>
           <state>2</state>
         </option>
         <option>
@@ -2422,6 +2439,14 @@
         <option>
           <name>XLinkMisraHandler</name>
           <state>0</state>
+        </option>
+        <option>
+          <name>CrcAlign</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>CrcInitialValue</name>
+          <state>0x0</state>
         </option>
       </data>
     </settings>
