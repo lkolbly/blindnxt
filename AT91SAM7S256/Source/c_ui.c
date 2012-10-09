@@ -385,10 +385,42 @@ UBYTE*    cUiGetString(UBYTE No)        // Get string in text string file
   return (Result);
 }
 
+void cUiMenuEnter(void);
+void cUiLoadLevel(UBYTE FileLevel,UBYTE MenuLevel,UBYTE MenuIndex);
+void      cDisplayCenterString(FONT *pFont,UBYTE *pString,UBYTE Line);
+
+int hasRunSecondEnter = 0;
+
+#define BUTTON_TEST 123098
 
 UBYTE     cUiReadButtons(void)             // Read buttons
 {
   UBYTE   Result = BUTTON_NONE;
+
+  // LMK: Watch for the 'reset' key sequence.
+  if ((pMapButton->State[BTN3] & PRESSED_STATE) && (pMapButton->State[BTN2] & PRESSED_STATE)) {
+    dSoundFreq(1000, 100, 10);
+    //cUiMenuEnter();
+    //cUiLoadLevel(3,0,0);
+    //cDisplayCenterString(IOMapDisplay.pFont, "Hello", TEXTLINE_3);
+    if (VarsUi.ButtonOld != BUTTON_TEST) {
+      VarsUi.Function       = 0;
+      VarsUi.MenuFileLevel  = 1;
+
+      hasRunSecondEnter = 1;
+      
+      cUiLoadLevel(1,0,1);
+      cUiLoadLevel(1,1,1);
+
+      VarsUi.EnterOnlyCalls = FALSE;
+      VarsUi.ExitOnlyCalls  = FALSE;
+
+      cUiMenuEnter();
+      //cUiMenuEnter();
+      IOMapUi.State         = NEXT_MENU;
+    }
+    Result = BUTTON_TEST;
+  } else {
 
   if (!(IOMapUi.Flags & UI_DISABLE_LEFT_RIGHT_ENTER))
   {
@@ -411,6 +443,7 @@ UBYTE     cUiReadButtons(void)             // Read buttons
     {
       Result = BUTTON_EXIT;
     }
+  }
   }
   if (Result == BUTTON_NONE)
   {
@@ -1034,7 +1067,7 @@ void      cUiMenuPrev(void)
 
 void      cUiMenuEnter(void)
 {
-  dSoundFreq(200, 500, 100);
+  //dSoundFreq(200, 500, 100);
   // Call function with parameter (if pressent)
   if (!(VarsUi.pMenuLevel->SpecialFlags & MENU_INIT_CALLS))
   {
@@ -1445,12 +1478,13 @@ void      cUiCtrl(void)
 
     case INIT_MENU :
     {
+      dSoundFreq(400, 100, 10);
       // Restart menu system
       VarsUi.Function       = 0;
-      VarsUi.MenuFileLevel  = 0;
+      VarsUi.MenuFileLevel  = 1;
 
-      cUiLoadLevel(0,0,1);
-      cUiLoadLevel(0,1,1);
+      cUiLoadLevel(1,0,1);
+      cUiLoadLevel(1,1,1);
 
       VarsUi.EnterOnlyCalls = FALSE;
       VarsUi.ExitOnlyCalls  = FALSE;
@@ -1461,6 +1495,7 @@ void      cUiCtrl(void)
 
     case NEXT_MENU : // prepare icons
     {
+      //dSoundFreq(200, 500, 10);
       // Init various variables
       VarsUi.State      = 0;
 
@@ -1543,8 +1578,14 @@ void      cUiCtrl(void)
       {
         VarsUi.ExitOnlyCalls = TRUE;
       }
-
+      
       IOMapUi.State                             =  DRAW_MENU;
+
+      if (VarsUi.ButtonOld == BUTTON_TEST && !hasRunSecondEnter) {
+        cUiMenuEnter();
+        hasRunSecondEnter = 1;
+        IOMapUi.State = NEXT_MENU;
+      }
     }
     break;
 
