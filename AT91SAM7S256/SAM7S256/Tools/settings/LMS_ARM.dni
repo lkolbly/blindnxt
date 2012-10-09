@@ -17,3 +17,6 @@ LogFile=_ ""
 mode=0
 [Breakpoints]
 Count=0
+[TraceHelper]
+Enabled=0
+ShowSource=1
