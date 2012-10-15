@@ -391,7 +391,7 @@ void      cDisplayCenterString(FONT *pFont,UBYTE *pString,UBYTE Line);
 
 int hasRunSecondEnter = 0;
 
-#define BUTTON_TEST 123098
+#define LASAR_BNXT_MENU_RESET 123098
 
 UBYTE     cUiReadButtons(void)             // Read buttons
 {
@@ -399,16 +399,16 @@ UBYTE     cUiReadButtons(void)             // Read buttons
 
   // LMK: Watch for the 'reset' key sequence.
   if ((pMapButton->State[BTN3] & PRESSED_STATE) && (pMapButton->State[BTN2] & PRESSED_STATE)) {
-    dSoundFreq(1000, 100, 10);
+    dSoundFreq(1000, 100, 3);
     //cUiMenuEnter();
     //cUiLoadLevel(3,0,0);
     //cDisplayCenterString(IOMapDisplay.pFont, "Hello", TEXTLINE_3);
-    if (VarsUi.ButtonOld != BUTTON_TEST) {
+    //if (VarsUi.ButtonOld != BUTTON_TEST) {
       VarsUi.Function       = 0;
       VarsUi.MenuFileLevel  = 1;
 
       hasRunSecondEnter = 1;
-      
+
       cUiLoadLevel(1,0,1);
       cUiLoadLevel(1,1,1);
 
@@ -416,11 +416,17 @@ UBYTE     cUiReadButtons(void)             // Read buttons
       VarsUi.ExitOnlyCalls  = FALSE;
 
       cUiMenuEnter();
-      //cUiMenuEnter();
       IOMapUi.State         = NEXT_MENU;
-    }
-    Result = BUTTON_TEST;
+      //IOMapUi.State = LASAR_BNXT_MENU_RESET;
+      /*} else if (!hasRunSecondEnter) {
+      hasRunSecondEnter = 1;
+      cUiMenuEnter();
+      IOMapUi.State = NEXT_MENU;*/
+      //}
+  //Result = BUTTON_TEST;
   } else {
+
+    hasRunSecondEnter = 0;
 
   if (!(IOMapUi.Flags & UI_DISABLE_LEFT_RIGHT_ENTER))
   {
@@ -1581,10 +1587,12 @@ void      cUiCtrl(void)
       
       IOMapUi.State                             =  DRAW_MENU;
 
-      if (VarsUi.ButtonOld == BUTTON_TEST && !hasRunSecondEnter) {
+      if (hasRunSecondEnter == 1) {
         cUiMenuEnter();
-        hasRunSecondEnter = 1;
+        hasRunSecondEnter = 2;
         IOMapUi.State = NEXT_MENU;
+      } else if (hasRunSecondEnter == 2) {
+	hasRunSecondEnter = 0;
       }
     }
     break;
@@ -1772,6 +1780,13 @@ void      cUiCtrl(void)
       {
         cUiMenuEnter();
       }
+    }
+    break;
+
+  case LASAR_BNXT_MENU_RESET:
+    {
+      cUiMenuEnter();
+      IOMapUi.State = NEXT_MENU;
     }
     break;
 
