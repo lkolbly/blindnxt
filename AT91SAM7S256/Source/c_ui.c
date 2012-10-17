@@ -390,8 +390,39 @@ void cUiLoadLevel(UBYTE FileLevel,UBYTE MenuLevel,UBYTE MenuIndex);
 void      cDisplayCenterString(FONT *pFont,UBYTE *pString,UBYTE Line);
 
 int hasRunSecondEnter = 0;
+//int isInProgramMenu = 0;
+//int highlightedProgram = 0;
 
 #define LASAR_BNXT_MENU_RESET 123098
+
+void lmkDelay(int lim)
+{
+  int i;
+  for (i=0; i<lim; i++) {
+  }
+}
+
+void lmkResetMenuSound(int ntimes)
+{
+  //ntimes = VarsUi.pMenuLevel->ItemIndex;
+  if (ntimes < 0) {
+    ntimes = 0;
+  }
+  ntimes++;
+  int i;
+  for (i=0; i<ntimes; i++) {
+    cSoundQueueFreq(500, 500, 3);
+    cSoundQueueFreq(1500, 500, 0);
+#if 0
+    dSoundFreq(500, 500, 3);
+    lmkDelay(10000000);
+    //sleep(1);
+    dSoundFreq(1500, 500, 3);
+    lmkDelay(10000000);
+    //sleep(1);
+#endif
+  }
+}
 
 UBYTE     cUiReadButtons(void)             // Read buttons
 {
@@ -417,6 +448,9 @@ UBYTE     cUiReadButtons(void)             // Read buttons
 
       cUiMenuEnter();
       IOMapUi.State         = NEXT_MENU;
+
+      VarsUi.isInProgramMenu = 1;
+      //highlightedProgram = 0;
       //IOMapUi.State = LASAR_BNXT_MENU_RESET;
       /*} else if (!hasRunSecondEnter) {
       hasRunSecondEnter = 1;
@@ -489,7 +523,7 @@ UBYTE     cUiReadButtons(void)             // Read buttons
     Result            = IOMapUi.Button;
     IOMapUi.Button    = BUTTON_NONE;
   }
-  if (Result != BUTTON_NONE)
+  if (Result != BUTTON_NONE && !VarsUi.isInProgramMenu)
   {
     // If key - play key sound file
     sprintf((char*)pMapSound->SoundFilename,"%s.%s",(char*)UI_KEYCLICK_SOUND,(char*)TXT_FILE_EXT[FILETYPE_SOUND]);
@@ -1484,7 +1518,7 @@ void      cUiCtrl(void)
 
     case INIT_MENU :
     {
-      dSoundFreq(400, 100, 10);
+      //dSoundFreq(400, 100, 10);
       // Restart menu system
       VarsUi.Function       = 0;
       VarsUi.MenuFileLevel  = 1;
@@ -1738,6 +1772,14 @@ void      cUiCtrl(void)
           }
         }
       }
+      if (VarsUi.isInProgramMenu == 1) {
+	VarsUi.highlightedProgram--;
+	if (VarsUi.highlightedProgram < 0) {
+	  VarsUi.highlightedProgram += 4;//VarsUi.pMenuLevel->Items;
+	}
+	//dSoundFreq(500, 100, 3);
+	lmkResetMenuSound(VarsUi.highlightedProgram);
+      }
       IOMapUi.State = NEXT_MENU;
     }
     break;
@@ -1766,6 +1808,14 @@ void      cUiCtrl(void)
           }
         }
       }
+      if (VarsUi.isInProgramMenu == 1) {
+	VarsUi.highlightedProgram++;
+	if (VarsUi.highlightedProgram > 4) {
+	  VarsUi.highlightedProgram -= 4;//VarsUi.pMenuLevel->Items;
+	}
+	//dSoundFreq(1500, 100, 3);
+	lmkResetMenuSound(VarsUi.highlightedProgram);
+      }
       IOMapUi.State = NEXT_MENU;
     }
     break;
@@ -1779,6 +1829,9 @@ void      cUiCtrl(void)
       else
       {
         cUiMenuEnter();
+      }
+      if (VarsUi.isInProgramMenu == 2) {
+	VarsUi.isInProgramMenu = 3;
       }
     }
     break;
@@ -1799,6 +1852,11 @@ void      cUiCtrl(void)
       else
       {
         cUiMenuExit();
+      }
+      if (VarsUi.isInProgramMenu == 2) {
+	VarsUi.isInProgramMenu = 0;
+      } else if (VarsUi.isInProgramMenu == 3) {
+	VarsUi.isInProgramMenu = 2;
       }
     }
     break;
@@ -1995,5 +2053,7 @@ void      cUiCtrl(void)
 void      cUiExit(void)
 {
   VarsUi.Initialized        = FALSE;
+  VarsUi.isInProgramMenu    = 0;
+  VarsUi.highlightedProgram = 0;
   IOMapUi.State             = INIT_DISPLAY;
 }

@@ -24,6 +24,7 @@
 #include  "c_loader.iom"
 #include  "c_sound.h"
 #include  "d_sound.h"
+#include "bnxt_queue.h"
 
 static    IOMAPSOUND   IOMapSound;
 static    VARSSOUND    VarsSound;
@@ -44,6 +45,8 @@ const     HEADER       cSound =
 };
 
 
+BNXT_QUEUE bnxtSndToneQueue;
+
 UWORD     cSoundFile(UBYTE Cmd,UBYTE *pFile,UBYTE *pData,ULONG *pLng)
 {
   return (pMapLoader->pFunc(Cmd,pFile,pData,pLng));
@@ -63,6 +66,14 @@ void      cSoundInit(void* pHeader)
   VarsSound.BufferIn          =  0;
   VarsSound.BufferOut         =  0;
   dSoundInit();
+  bnxtQueueInit(&bnxtSndToneQueue);
+}
+
+void cSoundQueueFreq(UWORD Hz, UWORD mS, UBYTE Volume)
+{
+  cSoundFreq_t freq;
+  freq.Hz = Hz; freq.mS = mS; freq.Volume = Volume;
+  bnxtQueuePush(&bnxtSndToneQueue, freq);
 }
 
 void      cSoundCtrl(void)
@@ -300,6 +311,11 @@ void      cSoundCtrl(void)
 
   VarsSound.BufferIn  = In;
   VarsSound.BufferOut = Out;
+
+  if ((dSoundReady()) && (bnxtQueueLength(&bnxtSndToneQueue) > 0)) {
+    cSoundFreq_t freq = bnxtQueuePop(&bnxtSndToneQueue);
+    dSoundFreq(freq.Hz, freq.mS, freq.Volume);
+  }
 }
 
 
