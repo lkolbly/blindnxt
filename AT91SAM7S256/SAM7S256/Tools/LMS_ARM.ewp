@@ -2478,6 +2478,9 @@
     </settings>
   </configuration>
   <file>
+    <name>$PROJ_DIR$\..\..\Source\bnxt_queue.c</name>
+  </file>
+  <file>
     <name>$PROJ_DIR$\..\..\Source\c_button.c</name>
   </file>
   <file>

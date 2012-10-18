@@ -1,0 +1,23 @@
+#ifndef BNXT_QUEUE_H
+#define BNXT_QUEUE_H
+
+
+#define BNXT_QUEUE_BUFFER_SIZE 20
+typedef BNXT_QUEUE_TYPE int;
+
+// Circular Buffer Based
+typedef struct BNXT_QUEUE
+{
+  int start; 
+  int end;
+  BNXT_QUEUE_TYPE buffer[BNXT_QUEUE_BUFFER_SIZE];
+} BNXT_QUEUE;
+
+void bnxtQueueInit(BNXT_QUEUE *queue);
+void bnxtQueuePush(BNXT_QUEUE *queue, BNXT_QUEUE_TYPE val);
+BNXT_QUEUE_TYPE bnxtQueuePop(BNXT_QUEUE *queue);
+BNXT_QUEUE_TYPE bnxtQueuePeek(BNXT_QUEUE *queue);
+int bnxtQueueLength(BNXT_QUEUE *queue);
+
+
+#endif
