@@ -394,6 +394,7 @@ int hasRunSecondEnter = 0;
 //int highlightedProgram = 0;
 
 #define LASAR_BNXT_MENU_RESET 123098
+#define BNXT_NUM_PROGRAMS 6
 
 void lmkDelay(int lim)
 {
@@ -408,8 +409,12 @@ void lmkResetMenuSound(int ntimes)
   if (ntimes < 0) {
     ntimes = 0;
   }
-  ntimes++;
+  if (ntimes == 0) {
+    ntimes = BNXT_NUM_PROGRAMS;
+  }
+  //ntimes++;
   int i;
+  cSoundClearQueue();
   for (i=0; i<ntimes; i++) {
     cSoundQueueFreq(500, 500, 3);
     cSoundQueueFreq(1500, 500, 0);
@@ -430,110 +435,112 @@ UBYTE     cUiReadButtons(void)             // Read buttons
 
   // LMK: Watch for the 'reset' key sequence.
   if ((pMapButton->State[BTN3] & PRESSED_STATE) && (pMapButton->State[BTN2] & PRESSED_STATE)) {
-    dSoundFreq(1000, 100, 3);
+    dSoundFreq(2000, 100, 3);
+    //cSoundQueueFreq(1000, 100, 3);
     //cUiMenuEnter();
     //cUiLoadLevel(3,0,0);
     //cDisplayCenterString(IOMapDisplay.pFont, "Hello", TEXTLINE_3);
     //if (VarsUi.ButtonOld != BUTTON_TEST) {
-      VarsUi.Function       = 0;
-      VarsUi.MenuFileLevel  = 1;
+    VarsUi.Function       = 0;
+    VarsUi.MenuFileLevel  = 1;
 
-      hasRunSecondEnter = 1;
+    hasRunSecondEnter = 1;
 
-      cUiLoadLevel(1,0,1);
-      cUiLoadLevel(1,1,1);
+    cUiLoadLevel(1,0,1);
+    cUiLoadLevel(1,1,1);
 
-      VarsUi.EnterOnlyCalls = FALSE;
-      VarsUi.ExitOnlyCalls  = FALSE;
+    VarsUi.EnterOnlyCalls = FALSE;
+    VarsUi.ExitOnlyCalls  = FALSE;
 
-      cUiMenuEnter();
-      IOMapUi.State         = NEXT_MENU;
+    cUiMenuEnter();
+    IOMapUi.State         = NEXT_MENU;
 
-      VarsUi.isInProgramMenu = 1;
-      //highlightedProgram = 0;
-      //IOMapUi.State = LASAR_BNXT_MENU_RESET;
-      /*} else if (!hasRunSecondEnter) {
+    VarsUi.isInProgramMenu = 1;
+    VarsUi.highlightedProgram = 0;
+    //highlightedProgram = 0;
+    //IOMapUi.State = LASAR_BNXT_MENU_RESET;
+    /*} else if (!hasRunSecondEnter) {
       hasRunSecondEnter = 1;
       cUiMenuEnter();
       IOMapUi.State = NEXT_MENU;*/
-      //}
-  //Result = BUTTON_TEST;
+    //}
+    //Result = BUTTON_TEST;
   } else {
 
     hasRunSecondEnter = 0;
 
-  if (!(IOMapUi.Flags & UI_DISABLE_LEFT_RIGHT_ENTER))
-  {
-    if ((pMapButton->State[BTN3] & PRESSED_STATE))
-    {
-      Result = BUTTON_LEFT;
-    }
-    if ((pMapButton->State[BTN2] & PRESSED_STATE))
-    {
-      Result = BUTTON_RIGHT;
-    }
-    if ((pMapButton->State[BTN4] & PRESSED_STATE))
-    {
-      Result = BUTTON_ENTER;
-    }
-  }
-  if (!(IOMapUi.Flags & UI_DISABLE_EXIT))
-  {
-    if ((pMapButton->State[BTN1] & PRESSED_STATE))
-    {
-      Result = BUTTON_EXIT;
-    }
-  }
+    if (!(IOMapUi.Flags & UI_DISABLE_LEFT_RIGHT_ENTER))
+      {
+	if ((pMapButton->State[BTN3] & PRESSED_STATE))
+	  {
+	    Result = BUTTON_LEFT;
+	  }
+	if ((pMapButton->State[BTN2] & PRESSED_STATE))
+	  {
+	    Result = BUTTON_RIGHT;
+	  }
+	if ((pMapButton->State[BTN4] & PRESSED_STATE))
+	  {
+	    Result = BUTTON_ENTER;
+	  }
+      }
+    if (!(IOMapUi.Flags & UI_DISABLE_EXIT))
+      {
+	if ((pMapButton->State[BTN1] & PRESSED_STATE))
+	  {
+	    Result = BUTTON_EXIT;
+	  }
+      }
   }
   if (Result == BUTTON_NONE)
-  {
-    // All buttons released
-    VarsUi.ButtonOld  = BUTTON_NONE;
-    VarsUi.ButtonTime = BUTTON_DELAY_TIME;
-  }
+    {
+      // All buttons released
+      VarsUi.ButtonOld  = BUTTON_NONE;
+      VarsUi.ButtonTime = BUTTON_DELAY_TIME;
+    }
   else
-  {
-    // Some button pressed
-    if (VarsUi.ButtonOld == BUTTON_NONE)
     {
-      // Just pressed
-      VarsUi.ButtonOld  = Result;
-      VarsUi.ButtonTimer = 0;
-    }
-    else
-    {
-      // Still pressed
-      Result = BUTTON_NONE;
+      // Some button pressed
+      if (VarsUi.ButtonOld == BUTTON_NONE)
+	{
+	  // Just pressed
+	  VarsUi.ButtonOld  = Result;
+	  VarsUi.ButtonTimer = 0;
+	}
+      else
+	{
+	  // Still pressed
+	  Result = BUTTON_NONE;
 
-      if (VarsUi.ButtonTimer >= VarsUi.ButtonTime)
-      {
-        VarsUi.ButtonTimer = 0;
-        VarsUi.ButtonTime  = BUTTON_REPEAT_TIME;
-        if ((VarsUi.ButtonOld == BUTTON_LEFT) || (VarsUi.ButtonOld == BUTTON_RIGHT))
-        {
-          // If arrow repeat
-          Result = VarsUi.ButtonOld;
-        }
-      }
+	  if (VarsUi.ButtonTimer >= VarsUi.ButtonTime)
+	    {
+	      VarsUi.ButtonTimer = 0;
+	      VarsUi.ButtonTime  = BUTTON_REPEAT_TIME;
+	      if ((VarsUi.ButtonOld == BUTTON_LEFT) || (VarsUi.ButtonOld == BUTTON_RIGHT))
+		{
+		  // If arrow repeat
+		  Result = VarsUi.ButtonOld;
+		}
+	    }
+	}
     }
-  }
   if (VarsUi.ButtonOld == BUTTON_NONE)
-  {
-    // If no key - check interface
-    Result            = IOMapUi.Button;
-    IOMapUi.Button    = BUTTON_NONE;
-  }
+    {
+      // If no key - check interface
+      Result            = IOMapUi.Button;
+      IOMapUi.Button    = BUTTON_NONE;
+    }
   if (Result != BUTTON_NONE && !VarsUi.isInProgramMenu)
-  {
-    // If key - play key sound file
-    sprintf((char*)pMapSound->SoundFilename,"%s.%s",(char*)UI_KEYCLICK_SOUND,(char*)TXT_FILE_EXT[FILETYPE_SOUND]);
-    pMapSound->Volume =  IOMapUi.Volume;
-    pMapSound->Mode   =  SOUND_ONCE;
-    pMapSound->Flags |=  SOUND_UPDATE;
+    {
+      // If key - play key sound file
+      sprintf((char*)pMapSound->SoundFilename,"%s.%s",(char*)UI_KEYCLICK_SOUND,(char*)TXT_FILE_EXT[FILETYPE_SOUND]);
+      pMapSound->Volume =  IOMapUi.Volume;
+      pMapSound->Mode   =  SOUND_ONCE;
+      pMapSound->Flags |=  SOUND_UPDATE;
 
-    // Reset power down timer
-    IOMapUi.Flags    |= UI_RESET_SLEEP_TIMER;
-  }
+      // Reset power down timer
+      IOMapUi.Flags    |= UI_RESET_SLEEP_TIMER;
+    }
 
   return (Result);
 }
@@ -1775,7 +1782,7 @@ void      cUiCtrl(void)
       if (VarsUi.isInProgramMenu == 1) {
 	VarsUi.highlightedProgram--;
 	if (VarsUi.highlightedProgram < 0) {
-	  VarsUi.highlightedProgram += 4;//VarsUi.pMenuLevel->Items;
+	  VarsUi.highlightedProgram += BNXT_NUM_PROGRAMS;//VarsUi.pMenuLevel->Items;
 	}
 	//dSoundFreq(500, 100, 3);
 	lmkResetMenuSound(VarsUi.highlightedProgram);
@@ -1810,8 +1817,8 @@ void      cUiCtrl(void)
       }
       if (VarsUi.isInProgramMenu == 1) {
 	VarsUi.highlightedProgram++;
-	if (VarsUi.highlightedProgram > 4) {
-	  VarsUi.highlightedProgram -= 4;//VarsUi.pMenuLevel->Items;
+	if (VarsUi.highlightedProgram > BNXT_NUM_PROGRAMS) {
+	  VarsUi.highlightedProgram -= BNXT_NUM_PROGRAMS;//VarsUi.pMenuLevel->Items;
 	}
 	//dSoundFreq(1500, 100, 3);
 	lmkResetMenuSound(VarsUi.highlightedProgram);
@@ -1836,7 +1843,7 @@ void      cUiCtrl(void)
     }
     break;
 
-  case LASAR_BNXT_MENU_RESET:
+    case LASAR_BNXT_MENU_RESET:
     {
       cUiMenuEnter();
       IOMapUi.State = NEXT_MENU;

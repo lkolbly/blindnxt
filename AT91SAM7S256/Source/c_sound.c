@@ -47,6 +47,11 @@ const     HEADER       cSound =
 
 BNXT_QUEUE bnxtSndToneQueue;
 
+void cSoundClearQueue(void)
+{
+  bnxtQueueClear(&bnxtSndToneQueue);
+}
+
 UWORD     cSoundFile(UBYTE Cmd,UBYTE *pFile,UBYTE *pData,ULONG *pLng)
 {
   return (pMapLoader->pFunc(Cmd,pFile,pData,pLng));

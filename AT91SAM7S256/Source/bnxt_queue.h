@@ -25,6 +25,6 @@ void bnxtQueuePush(BNXT_QUEUE *queue, cSoundFreq_t val);
 cSoundFreq_t bnxtQueuePop(BNXT_QUEUE *queue);
 cSoundFreq_t bnxtQueuePeek(BNXT_QUEUE *queue);
 int bnxtQueueLength(BNXT_QUEUE *queue);
-
+void bnxtQueueClear(BNXT_QUEUE *queue);
 
 #endif

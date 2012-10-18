@@ -1,5 +1,11 @@
 #include "bnxt_queue.h"
 
+void bnxtQueueClear(BNXT_QUEUE *queue)
+{
+  queue->start = 0;
+  queue->end = 0;
+}
+
 void bnxtQueueInit(BNXT_QUEUE *queue)
 {
   queue->start = 0;

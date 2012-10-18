@@ -38,6 +38,7 @@ typedef   struct
 void      cSoundInit(void* pHeaders);
 void      cSoundCtrl(void);
 void      cSoundExit(void);
+void cSoundClearQueue(void);
 
 extern    const HEADER cSound;
 
