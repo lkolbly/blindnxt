@@ -14,10 +14,10 @@ void bnxtQueueInit(BNXT_QUEUE *queue)
 
 void bnxtQueuePush(BNXT_QUEUE *queue, cSoundFreq_t val)
 {
+  queue->buffer[queue->end] = val;
   queue->end++;
   if (queue->end >= BNXT_QUEUE_BUFFER_SIZE)
     queue->end -= BNXT_QUEUE_BUFFER_SIZE;
-  queue->buffer[queue->end] = val;
 }
 
 

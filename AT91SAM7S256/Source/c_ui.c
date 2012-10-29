@@ -394,7 +394,7 @@ int hasRunSecondEnter = 0;
 //int highlightedProgram = 0;
 
 #define LASAR_BNXT_MENU_RESET 123098
-#define BNXT_NUM_PROGRAMS 6
+#define BNXT_NUM_PROGRAMS (VarsUi.NoOfFiles)
 
 void lmkDelay(int lim)
 {
@@ -402,6 +402,8 @@ void lmkDelay(int lim)
   for (i=0; i<lim; i++) {
   }
 }
+
+UBYTE     cUiFindNoOfFiles(UBYTE FileType,UBYTE *NoOfFiles);
 
 void lmkResetMenuSound(int ntimes)
 {
@@ -415,17 +417,14 @@ void lmkResetMenuSound(int ntimes)
   //ntimes++;
   int i;
   cSoundClearQueue();
+  cSoundQueueFreq(500, 300, 3);
+  unsigned char j;
+  unsigned char z = cUiFindNoOfFiles(FILETYPE_NXT, &j);
+  //for (i=0; i<ntimes; i++) {
+  z = VarsUi.NoOfFiles;
   for (i=0; i<ntimes; i++) {
-    cSoundQueueFreq(500, 500, 3);
-    cSoundQueueFreq(1500, 500, 0);
-#if 0
-    dSoundFreq(500, 500, 3);
-    lmkDelay(10000000);
-    //sleep(1);
-    dSoundFreq(1500, 500, 3);
-    lmkDelay(10000000);
-    //sleep(1);
-#endif
+    cSoundQueueFreq(1500, 250, 3);
+    cSoundQueueFreq(1500, 250, 0);
   }
 }
 
@@ -435,7 +434,7 @@ UBYTE     cUiReadButtons(void)             // Read buttons
 
   // LMK: Watch for the 'reset' key sequence.
   if ((pMapButton->State[BTN3] & PRESSED_STATE) && (pMapButton->State[BTN2] & PRESSED_STATE)) {
-    dSoundFreq(2000, 100, 3);
+    dSoundFreq(500, 100, 3);
     //cSoundQueueFreq(1000, 100, 3);
     //cUiMenuEnter();
     //cUiLoadLevel(3,0,0);
@@ -457,6 +456,7 @@ UBYTE     cUiReadButtons(void)             // Read buttons
 
     VarsUi.isInProgramMenu = 1;
     VarsUi.highlightedProgram = 0;
+    VarsUi.buttonLatch = 1;
     //highlightedProgram = 0;
     //IOMapUi.State = LASAR_BNXT_MENU_RESET;
     /*} else if (!hasRunSecondEnter) {
@@ -491,6 +491,10 @@ UBYTE     cUiReadButtons(void)             // Read buttons
 	    Result = BUTTON_EXIT;
 	  }
       }
+  }
+  if (Result == BUTTON_NONE && VarsUi.buttonLatch) {
+    VarsUi.buttonLatch = 0;
+    return BUTTON_NONE;
   }
   if (Result == BUTTON_NONE)
     {
@@ -1759,7 +1763,16 @@ void      cUiCtrl(void)
     {
       if ((VarsUi.pMenuLevel->SpecialFlags & MENU_LEFT_RIGHT_AS_CALL))
       {
+	//lmkResetMenuSound(VarsUi.pMenuLevel->FunctionNo);
         cUiMenuCallFunction(VarsUi.pMenuLevel->FunctionNo,MENU_LEFT);
+	if (VarsUi.isInProgramMenu == 1) {
+	VarsUi.highlightedProgram--;
+	if (VarsUi.highlightedProgram < 0) {
+	  VarsUi.highlightedProgram += BNXT_NUM_PROGRAMS;//VarsUi.pMenuLevel->Items;
+	}
+	//dSoundFreq(500, 100, 3);
+	lmkResetMenuSound(VarsUi.highlightedProgram);
+      }
       }
       else
       {
@@ -1779,14 +1792,6 @@ void      cUiCtrl(void)
           }
         }
       }
-      if (VarsUi.isInProgramMenu == 1) {
-	VarsUi.highlightedProgram--;
-	if (VarsUi.highlightedProgram < 0) {
-	  VarsUi.highlightedProgram += BNXT_NUM_PROGRAMS;//VarsUi.pMenuLevel->Items;
-	}
-	//dSoundFreq(500, 100, 3);
-	lmkResetMenuSound(VarsUi.highlightedProgram);
-      }
       IOMapUi.State = NEXT_MENU;
     }
     break;
@@ -1795,6 +1800,16 @@ void      cUiCtrl(void)
     {
       if ((VarsUi.pMenuLevel->SpecialFlags & MENU_LEFT_RIGHT_AS_CALL))
       {
+      if (VarsUi.pMenuLevel->FunctionNo == 6) {
+	VarsUi.highlightedProgram++;
+	if (VarsUi.highlightedProgram > BNXT_NUM_PROGRAMS) {
+	  VarsUi.highlightedProgram -= BNXT_NUM_PROGRAMS;//VarsUi.pMenuLevel->Items;
+	}
+	//dSoundFreq(1500, 100, 3);
+	lmkResetMenuSound(VarsUi.highlightedProgram);
+      } else {
+	//lmkResetMenuSound(VarsUi.pMenuLevel->FunctionNo);
+      }
         cUiMenuCallFunction(VarsUi.pMenuLevel->FunctionNo,MENU_RIGHT);
       }
       else
@@ -1814,14 +1829,6 @@ void      cUiCtrl(void)
             VarsUi.pMenuLevel->ItemIndex = 1;
           }
         }
-      }
-      if (VarsUi.isInProgramMenu == 1) {
-	VarsUi.highlightedProgram++;
-	if (VarsUi.highlightedProgram > BNXT_NUM_PROGRAMS) {
-	  VarsUi.highlightedProgram -= BNXT_NUM_PROGRAMS;//VarsUi.pMenuLevel->Items;
-	}
-	//dSoundFreq(1500, 100, 3);
-	lmkResetMenuSound(VarsUi.highlightedProgram);
       }
       IOMapUi.State = NEXT_MENU;
     }

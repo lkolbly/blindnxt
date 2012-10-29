@@ -372,6 +372,7 @@ typedef   struct
   // LMK Stuff!
   UBYTE   isInProgramMenu;
   UBYTE   highlightedProgram;
+  UBYTE   buttonLatch;
 
   // Error display
   UBYTE   ErrorTimer;                               // Error show timer  

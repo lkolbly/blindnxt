@@ -369,6 +369,10 @@ typedef   struct
   UBYTE   BTPar2;                                   // Last lached BT command parameter 2
   UWORD   BTResult;                                 // Last lached BT command result
 
+  // LMK Stuff!
+  UBYTE   isInProgramMenu;
+  UBYTE   highlightedProgram;
+
   // Error display
   UBYTE   ErrorTimer;                               // Error show timer  
   UBYTE   ErrorFunction;                            // Error latched function
